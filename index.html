@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>どれが安いか比較</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h2>商品情報を入力してください</h2>
+    <table id="productTable">
+        <tr>
+            <th>商品名</th>
+            <th>価格</th>
+            <th>容量</th>
+        </tr>
+        <!-- 商品A -->
+        <tr>
+            <td>商品A</td>
+            <td><input type="number" placeholder="価格"></td>
+            <td><input type="number" placeholder="容量"></td>
+        </tr>
+        <!-- 商品B -->
+        <tr>
+            <td>商品B</td>
+            <td><input type="number" placeholder="価格"></td>
+            <td><input type="number" placeholder="容量"></td>
+        </tr>
+        <!-- 商品C -->
+        <tr>
+            <td>商品C</td>
+            <td><input type="number" placeholder="価格"></td>
+            <td><input type="number" placeholder="容量"></td>
+        </tr>
+    </table>
+
+    <button onclick="calculate()">計算</button>
+    <button onclick="clearTable()">削除</button>
+
+    <table id="resultTable" style="display: none;">
+        <tr>
+            <th>得順</th>
+            <th>商品名</th>
+            <th>容量</th>
+            <th>値段</th>
+            <th>単価</th>
+        </tr>
+        <!-- 結果表示用の3セットの行 -->
+        <tr>
+            <td id="rank1"></td>
+            <td id="name1"></td>
+            <td id="capacity1"></td>
+            <td id="price1"></td>
+            <td id="unitPrice1"></td>
+        </tr>
+        <tr>
+            <td id="rank2"></td>
+            <td id="name2"></td>
+            <td id="capacity2"></td>
+            <td id="price2"></td>
+            <td id="unitPrice2"></td>
+        </tr>
+        <tr>
+            <td id="rank3"></td>
+            <td id="name3"></td>
+            <td id="capacity3"></td>
+            <td id="price3"></td>
+            <td id="unitPrice3"></td>
+        </tr>
+    </table>
+
+    <h2 class="result" id="resultText"></h2>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
